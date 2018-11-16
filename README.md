@@ -1,13 +1,18 @@
 # Transfer-Learning
-Transfer learning using VGG16 on Fish dataset from Kaggle. link: https://www.kaggle.com/narae78/fish-detection/data
+Transfer learning using VGG16 on Fish dataset from Kaggle. link: https://www.kaggle.com/narae78/fish-detection/data.
 
-# CUSTOM DATA: 
+# Prerequisite:
+- Tensorflow 1.6+
+- Keras
+- CV2
+
+# Custom Data: 
 If you intend to use the above code on your own data, update the data folder. The structure of the folder should be such that the sub-folders are the class labels each containing the images classified in that class.
 
-# DOWNLOAD WEIGHTS: 
+# Download Weights: 
 download vgg16.npy file from https://mega.nz/#!YU1FWJrA!O1ywiCS2IiOlUCtCpI6HTJOMrneN-Qdv3ywQP5poecM.
 
-# TO-RUN: 
+# To-Run: 
 Once you have checked paths to your data directory in tranferModel.py run it. It will internally call createTransferCodes.py which will create a label file and a codes file. 
 The labels file will contain the ground truth labels of your data while the codes file will store the activations from relu6 layer of the VGG16 model.
 
