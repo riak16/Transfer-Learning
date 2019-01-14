@@ -7,7 +7,11 @@ Transfer learning using VGG16 on Fish dataset from Kaggle. link: https://www.kag
 - CV2
 
 # Custom Data: 
-If you intend to use the above code on your own data, update the data folder. The structure of the folder should be such that the sub-folders are the class labels each containing the images classified in that class.
+If you intend to use the above code on your own data, update the data folder. The structure of the folder should be such that the sub-folders are the class labels each containing the images belonging to that class.
+Example: Data( contains following subfolders)
+            -Dog ( Contains pictures with ground truth label "Dog")
+            -Cat ( Contains pictures with ground truth label "Cat")
+            -Bird ( Contains pictures with ground truth label "Bird")
 
 # Download Weights: 
 download vgg16.npy file from https://mega.nz/#!YU1FWJrA!O1ywiCS2IiOlUCtCpI6HTJOMrneN-Qdv3ywQP5poecM.
